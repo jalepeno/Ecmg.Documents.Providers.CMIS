@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Documents.Providers.CMIS</RootNamespace>
+    <TargetFrameworks>net8.0;net48</TargetFrameworks>
+    <Authors>magbender</Authors>
+    <Company>Conteage</Company>
+    <Copyright>Conteage Corp</Copyright>
+    <Description>A .NET Core library for connecting to CMIS compliant repositories for working with documents.</Description>
+    <PackageReadmeFile></PackageReadmeFile>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PortCMIS" Version="0.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ecmg.Documents\Ecmg.Documents.vbproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </None>
+  </ItemGroup>
+
+</Project>
